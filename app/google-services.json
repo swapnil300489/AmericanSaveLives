@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "20283692287",
+    "firebase_url": "https://americansavelivesrider.firebaseio.com",
+    "project_id": "americansavelivesrider",
+    "storage_bucket": "americansavelivesrider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20283692287:android:82335d8d655102cd8968ca",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20283692287-1qmh2c8i939ck8kr75djr1i6tdh0m27j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "9367d7a8b27f65c6ff5c03c29d744f6dc0830c3f"
+          }
+        },
+        {
+          "client_id": "20283692287-boe7pdtopauchs5li4vdid8jchnvhnbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaBWsQMNwAIO1JvApDBq9hbjRUSVTVhy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20283692287-boe7pdtopauchs5li4vdid8jchnvhnbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

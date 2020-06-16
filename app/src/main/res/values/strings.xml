@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">American Rider</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_source_location_here">Search Source Location Here</string>
+    <string name="search_drop_location_here">Search Drop Location Here</string>
+</resources>
