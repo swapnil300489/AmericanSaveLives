@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.UserList_Screen"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User List"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/id_text_nodata_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:text="No Record Found"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/id_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_rc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

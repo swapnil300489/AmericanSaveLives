@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.UserDetails"
+    android:background="#ffffff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/id_userTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Details"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/id_view1"/>
+
+        <View
+            android:id="@+id/id_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            app:layout_constraintTop_toBottomOf="@id/id_userTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/id_name_ed_text"/>
+
+
+        <EditText
+            android:id="@+id/id_name_ed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Enter Name"
+            android:background="@drawable/rounded_border_txt"
+            android:textColorHint="#DCDCDC"
+            android:textColor="#000000"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/id_view1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <EditText
+            android:id="@+id/id_contact_ed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Enter Contact Number"
+            android:background="@drawable/rounded_border_txt"
+            android:textColorHint="#DCDCDC"
+            android:textColor="#000000"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/id_name_ed_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/id_email_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Email Address"
+            android:background="@drawable/rounded_border_txt"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@id/id_contact_ed_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/id_dob_ed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Set Your DOB"
+            android:background="@drawable/rounded_border_txt"
+            android:textColorHint="#DCDCDC"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@id/id_email_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/id_age_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Your AGE"
+            android:textColorHint="#DCDCDC"
+            android:background="@drawable/rounded_border_txt"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@id/id_dob_ed_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/id_address_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Your Address"
+            android:background="@drawable/rounded_border_txt"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@id/id_age_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+        <TextView
+            android:id="@+id/id_addBtn_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#444444"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/id_address_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        <TextView
+            android:id="@+id/id_goto_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goto User List..."
+            android:padding="10dp"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="#03A9F4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_addBtn_text"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
